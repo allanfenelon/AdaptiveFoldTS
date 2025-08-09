@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="AdaptiveFoldTS",
-    version="1.0.2",
+    version="1.0.1",
     author="Allan Pereira Fenelon",
     author_email="allanpereira.fenelon@example.com",
     description="Validação Cruzada Adaptativa para Séries Temporais com Priorização Inteligente de Folds",

@@ -1,3 +1,3 @@
-from .adaptivefoldts import AdaptiveFoldTS
+from .core import AdaptiveFoldTS
 
 __all__ = ['AdaptiveFoldTS']
