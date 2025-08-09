@@ -1,5 +1,9 @@
 # AdaptiveFoldTS
 
+[![PyPI version](https://badge.fury.io/py/adaptivefoldts.svg)](https://badge.fury.io/py/adaptivefoldts)
+[![PyPI downloads](https://img.shields.io/pypi/dm/adaptivefoldts)](https://pypistats.org/packages/adaptivefoldts)
+
+
 **Validação Cruzada Adaptativa para Séries Temporais com Priorização Inteligente de Folds**
 
 AdaptiveFoldTS é uma biblioteca Python inovadora projetada para realizar validação cruzada em séries temporais utilizando uma abordagem adaptativa e priorizada. Utilizando estruturas de heap, a biblioteca organiza janelas de treino e teste com base em critérios dinâmicos — como variância, erro preditivo ou outras métricas customizáveis — permitindo que o processo de validação foque nos segmentos mais críticos ou desafiadores da série temporal.
