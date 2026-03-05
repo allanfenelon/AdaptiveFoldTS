@@ -33,13 +33,15 @@ pip install adaptivefoldts
 ```python
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LinearRegression
 from sklearn.dummy import DummyRegressor
+from sklearn.linear_model import LinearRegression
 
 from adaptivefoldts import AdaptiveFoldTS
 
 np.random.seed(42)
-series = pd.Series(np.sin(np.linspace(0, 20, 100)) + np.random.normal(0, 0.5, 100))
+base_signal = np.sin(np.linspace(0, 20, 100))
+noise = np.random.normal(0, 0.5, 100)
+series = pd.Series(base_signal + noise)
 
 models = {
     "linear_regression": LinearRegression(),
@@ -61,7 +63,7 @@ results = af.evaluate_models(models=models, max_iterations_per_fold=1)
 
 print("Resultados agregados por modelo:")
 for model_name, score in results.items():
-    print(f"{model_name}: {score:.4f}")
+    print("{}: {:.4f}".format(model_name, score))
 ```
 
 ## Funcionalidades Futuras
